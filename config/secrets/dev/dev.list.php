@@ -1,6 +1,7 @@
 <?php
 
 return array (
+  'APP_SECRET' => NULL,
   'DATABASE_HOSTNAME' => NULL,
   'DATABASE_NAME' => NULL,
   'DATABASE_PASSWORD' => NULL,
