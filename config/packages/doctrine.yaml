@@ -14,29 +14,29 @@ doctrine:
     orm:
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
-        auto_mapping: true
+        auto_mapping: false
         mappings:
             ApiBundle:
                 is_bundle: false
-                type: annotation
+                type: 'annotation'
                 dir: '%kernel.project_dir%/src/ApiBundle/Entity'
-                prefix: 'App\ApiBundle\Entity'
+                prefix: 'ApiBundle\Entity'
                 alias: ApiBundle
             MaintenanceBundle:
                 is_bundle: false
-                type: annotation
+                type: 'annotation'
                 dir: '%kernel.project_dir%/src/MaintenanceBundle/Entity'
-                prefix: 'App\MaintenanceBundle\Entity'
+                prefix: 'MaintenanceBundle\Entity'
                 alias: MaintenanceBundle
-            BookingBundle:
-                is_bundle: false
-                type: annotation
-                dir: '%kernel.project_dir%/src/BookingBundle/Entity'
-                prefix: 'App\BookingBundle\Entity'
-                alias: BookingBundle
             CoreBundle:
                 is_bundle: false
-                type: annotation
+                type: 'annotation'
                 dir: '%kernel.project_dir%/src/CoreBundle/Entity'
-                prefix: 'App\CoreBundle\Entity'
+                prefix: 'CoreBundle\Entity'
+                alias: CoreBundle
+            BookingBundle:
+                is_bundle: false
+                type: 'annotation'
+                dir: '%kernel.project_dir%/src/BookingBundle/Entity'
+                prefix: 'BookingBundle\Entity'
                 alias: BookingBundle

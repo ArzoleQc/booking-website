@@ -43,6 +43,7 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
         "symfony/browser-kit": "^5.1",
         "symfony/css-selector": "^5.1",
         "symfony/debug-bundle": "^5.1",
@@ -62,10 +63,10 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "App\\ApiBundle\\": "src/ApiBundle/",
-            "App\\BookingBundle\\": "src/BookingBundle/",
-            "App\\MaintenanceBundle\\": "src/MaintenanceBundle/",
-            "App\\CoreBundle\\": "src/CoreBundle/"
+            "ApiBundle\\": "src/ApiBundle/",
+            "BookingBundle\\": "src/BookingBundle/",
+            "MaintenanceBundle\\": "src/MaintenanceBundle/",
+            "CoreBundle\\": "src/CoreBundle/"
         }
     },
     "autoload-dev": {

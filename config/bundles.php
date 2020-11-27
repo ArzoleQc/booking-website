@@ -16,4 +16,5 @@ return [
     App\MaintenanceBundle\MaintenanceBundle::class => ['all' => true],
     App\BookingBundle\BookingBundle::class => ['all' => true],
     App\CoreBundle\CoreBundle::class => ['all' => true],
+    Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
 ];
